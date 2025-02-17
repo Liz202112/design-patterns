@@ -64,4 +64,5 @@ function clientCode(creator: Creator) {
   console.log(creator.someOperation());
 }
 
-clientCode(new ConcreteCreatorA()); 
+clientCode(new ConcreteCreatorA());  // "Creator: The same creator's code has just worked with Product A"
+clientCode(new ConcreteCreatorB());  // "Creator: The same creator's code has just worked with Product B"
